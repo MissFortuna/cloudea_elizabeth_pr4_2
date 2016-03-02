@@ -57,7 +57,7 @@ public class ProfileTest {
     public void testUpdate() throws Exception {
         String newDisplayName = "New Display Name";
         TeeShirtSize newTeeShirtSize = TeeShirtSize.M;
-        profile.updating(newDisplayName, newTeeShirtSize);
+        profile.update(newDisplayName, newTeeShirtSize);
         assertEquals(USER_ID, profile.getUserId());
         assertEquals(newDisplayName, profile.getDisplayName());
         assertEquals(EMAIL, profile.getMainEmail());
